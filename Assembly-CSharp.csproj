@@ -47,6 +47,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Buttons.cs" />
      <Compile Include="Assets\Scripts\CubeFloat.cs" />
+     <Compile Include="Assets\Scripts\GameCntrl.cs" />
+     <Compile Include="Assets\Scripts\RandCol.cs" />
+     <Compile Include="Assets\Scripts\RightOne.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
