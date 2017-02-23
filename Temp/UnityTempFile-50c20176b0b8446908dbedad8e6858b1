@@ -86,5 +86,6 @@ Assets/Scripts/CubeFloat.cs
 Assets/Scripts/GameCntrl.cs
 Assets/Scripts/RandCol.cs
 Assets/Scripts/RightOne.cs
+Assets/Scripts/timer.cs
 -r:/opt/Unity/Editor/Data/Mono/lib/mono/unity/System.Runtime.Serialization.dll
 -r:/opt/Unity/Editor/Data/Mono/lib/mono/unity/System.Xml.Linq.dll

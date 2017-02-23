@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\GameCntrl.cs" />
      <Compile Include="Assets\Scripts\RandCol.cs" />
      <Compile Include="Assets\Scripts\RightOne.cs" />
+     <Compile Include="Assets\Scripts\timer.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
