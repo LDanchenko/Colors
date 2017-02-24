@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\Buttons.cs" />
      <Compile Include="Assets\Scripts\CubeFloat.cs" />
      <Compile Include="Assets\Scripts\GameCntrl.cs" />
+     <Compile Include="Assets\Scripts\MaxScore.cs" />
      <Compile Include="Assets\Scripts\RandCol.cs" />
      <Compile Include="Assets\Scripts\RightOne.cs" />
      <Compile Include="Assets\Scripts\timer.cs" />

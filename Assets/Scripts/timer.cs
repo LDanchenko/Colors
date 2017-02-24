@@ -17,7 +17,7 @@ public class timer : MonoBehaviour {
 				Destroy (gameObject);
 			if (transform.position.x < -1.5f)
 				GetComponent <Renderer> ().material.color = Color.Lerp (GetComponent <Renderer> ().material.color, col, Time.deltaTime);
-			transform.position -= new Vector3 (0.1f, 0, 0);
+			transform.position -= new Vector3 (0.2f, 0, 0);
 		}
 
 		if (mCube.GetComponent <Renderer> ().material.color != lastCol) { //если сейчас цвет куба и цвет который был до этого отличаютс

@@ -74,6 +74,8 @@ public class GameCntrl : MonoBehaviour {
 	}
 
 	void playerLose () {
-		print ("Player lose");
+		if (PlayerPrefs.GetInt("Score") < count) { //если пользователь сейчас собрал больше чем было
+		PlayerPrefs.SetInt ("Score", count);		
+		}
 	}
 }

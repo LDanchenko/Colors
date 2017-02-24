@@ -84,6 +84,7 @@
 Assets/Scripts/Buttons.cs
 Assets/Scripts/CubeFloat.cs
 Assets/Scripts/GameCntrl.cs
+Assets/Scripts/MaxScore.cs
 Assets/Scripts/RandCol.cs
 Assets/Scripts/RightOne.cs
 Assets/Scripts/timer.cs
