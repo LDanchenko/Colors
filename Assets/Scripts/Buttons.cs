@@ -31,6 +31,12 @@ public class Buttons : MonoBehaviour { // клас для всех кнопок 
 			case "Home":
 			Application.LoadLevel("main");
 			break;
+			case "How To":
+			Application.LoadLevel("howTo");
+			break;
+			case "Close":
+			Application.LoadLevel("main");
+			break;
 		}
 	}
 
