@@ -25,6 +25,12 @@ public class Buttons : MonoBehaviour { // клас для всех кнопок 
 			case "Rating": //в магазин
 			Application.OpenURL("https://google.com.ua");
 			break;
+			case "Replay":
+			Application.LoadLevel("play");
+			break;
+			case "Home":
+			Application.LoadLevel("main");
+			break;
 		}
 	}
 

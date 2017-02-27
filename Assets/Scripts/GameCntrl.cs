@@ -4,6 +4,7 @@ using System.Collections;
 
 public class GameCntrl : MonoBehaviour {
 
+	public GameObject pLost;
 	public GameObject colBlock;
 	public Vector3 [] positions;
 	private GameObject block;
@@ -74,8 +75,8 @@ public class GameCntrl : MonoBehaviour {
 	}
 
 	void playerLose () {
-		if (PlayerPrefs.GetInt("Score") < count) { //если пользователь сейчас собрал больше чем было
-		PlayerPrefs.SetInt ("Score", count);		
-		}
+		if (PlayerPrefs.GetInt("Score") < count)  //если пользователь сейчас собрал больше чем было
+		PlayerPrefs.SetInt ("Score", count);	
+		pLost.SetActive (true);
 	}
 }
