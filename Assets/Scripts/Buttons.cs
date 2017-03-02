@@ -3,7 +3,21 @@ using System.Collections;
 
 public class Buttons : MonoBehaviour { // клас для всех кнопок , добавили к ним collider
 
+	public GameObject m_off, m_on;
 	public Sprite layer_blue, layer_green; //спрайты - кнопки картинками
+
+	void Start (){
+		if (gameObject.name == "Music"){
+		if (PlayerPrefs.GetString("Music") == "no") {
+			m_on.SetActive(false);
+			m_off.SetActive(true);
+		}
+		else {
+			m_on.SetActive(true);
+			m_off.SetActive(false);
+		}
+		}
+	}
 
 	void OnMouseDown ()  //когда палец на кнопке
 	{
@@ -18,6 +32,8 @@ public class Buttons : MonoBehaviour { // клас для всех кнопок 
 	}
 
 	void OnMouseUpAsButton(){ //нажал на кнопку с этой кнопки и снял палец
+		if (PlayerPrefs.GetString("Music") != "no")
+		GameObject.Find ("Click Audio").GetComponent <AudioSource> ().Play(); //клик при нажатии клавиши
 		switch(gameObject.name){ //проверяем имя обьекта
 			case "Play": //если Play открываем игру
 			Application.LoadLevel("play");
@@ -36,6 +52,18 @@ public class Buttons : MonoBehaviour { // клас для всех кнопок 
 			break;
 			case "Close":
 			Application.LoadLevel("main");
+			break;
+			case "Music":
+			if (PlayerPrefs.GetString("Music") != "no") {
+			PlayerPrefs.SetString ("Music", "no");
+			m_on.SetActive(false);
+			m_off.SetActive(true);
+			}
+			else {
+				PlayerPrefs.SetString ("Music", "yes");
+				m_on.SetActive(true);
+				m_off.SetActive(false);
+			}
 			break;
 		}
 	}

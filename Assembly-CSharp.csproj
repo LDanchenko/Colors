@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Buttons.cs" />
      <Compile Include="Assets\Scripts\CubeFloat.cs" />
+     <Compile Include="Assets\Scripts\DontDestroy.cs" />
      <Compile Include="Assets\Scripts\GameCntrl.cs" />
      <Compile Include="Assets\Scripts\MaxScore.cs" />
      <Compile Include="Assets\Scripts\RandCol.cs" />

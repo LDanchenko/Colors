@@ -40,6 +40,8 @@ public class GameCntrl : MonoBehaviour {
 	}
 
 	void nextColors () { //
+if (PlayerPrefs.GetString("Music") != "no")
+		GetComponent<AudioSource> (). Play();
 		count++; //плюс к скору
 		score.text = count.ToString (); //записываем в текст скору
 		aColor = new Vector4 (Random.Range (0.1f, 1f), Random.Range (0.1f, 1f), Random.Range (0.1f, 1f), 1); //цвет меняем - тут создаем основной цвет
@@ -78,5 +80,7 @@ public class GameCntrl : MonoBehaviour {
 		if (PlayerPrefs.GetInt("Score") < count)  //если пользователь сейчас собрал больше чем было
 		PlayerPrefs.SetInt ("Score", count);	
 		pLost.SetActive (true);
+		if (PlayerPrefs.GetString("Music") == "no")
+		pLost.GetComponent<AudioSource> (). mute = true;
 	}
 }
