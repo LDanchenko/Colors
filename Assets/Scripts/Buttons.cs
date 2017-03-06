@@ -38,8 +38,8 @@ public class Buttons : MonoBehaviour { // клас для всех кнопок 
 			case "Play": //если Play открываем игру
 			Application.LoadLevel("play");
 			break;
-			case "Rating": //в магазин
-			Application.OpenURL("https://google.com.ua");
+			case "Exit": //в магазин
+			Application.Quit();
 			break;
 			case "Replay":
 			Application.LoadLevel("play");
@@ -69,4 +69,3 @@ public class Buttons : MonoBehaviour { // клас для всех кнопок 
 	}
 
 }
-
